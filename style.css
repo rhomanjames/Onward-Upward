@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.home {
+    height: 100vh;
+    box-shadow: 2px rgba(0, 0, 0, 0.301);
+}
+
+.logo h1 {
+    color: orange;
+}
+
+.content {
+    height: 80vh;
+    padding-top: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    background:  #F9F8FD;
+    box-shadow: 2px rgba(0, 0, 0, 0.301);
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.jobList {
+    position: relative;
+    margin-top: 4rem;
+    min-height: fit-content;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    background:  white;
+    box-shadow: 2px rgba(0, 0, 0, 0.301);
+    width: 100%;
+}
+
+.jobList h2 {
+    margin-bottom: 10px;
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+
+.leftContent {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.leftContent h1 {
+    font-size: 2.75rem;
+}
+
+#homeBtn {
+    border-radius: 2rem;
+    padding: .5rem;
+    color: black;
+}
+
+#homeBtn:hover {
+    color: orange;
+}
+
+#mainPic {
+    height: 100%; 
+}
+
+.content p {
+    width: 75%;
+}
+
+.about {
+    background: white;
+    text-align: center;
+    width: 100%;
+}
+
+.about p {
+    width: 50%;
+}
+
+.aboutCenter {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.jobs {
+    border-radius: 2rem;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.jobPost {
+    margin: 1rem;
+    background: #F9F8FD;
+    min-width: 400px;
+    max-width: 400px;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: .4s;
+    border: transparent 1px solid;
+}
+
+.jobPost:hover {
+    border: orange solid 1px;
+    box-shadow: 2px 2px 2px 0 rgba(207, 207, 207, 0.671);
+}
+
+p {
+    font-weight: 400;
+}
+
+.rightContent {
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30%;
+    height: fit-content;
+    border-radius: 1rem;
+    padding-right: 2rem;
+}
+
+
+
+button {
+    background: orange;
+    color: white;
+    border-radius: 1rem;
+    padding: .5rem;
+    border: none;
+    margin-top: 1rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.2);
+    box-shadow: 2px 2px 2px 0 rgba(207, 207, 207, 0.671);
+
+}
+
+nav {
+    z-index: 1;
+    justify-content: space-between;
+    display: flex; 
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 2px;
+    position: fixed;
+    background: white;
+    width: 100vw;
+    box-shadow: 2px 2px 2px 0 rgba(207, 207, 207, 0.671);
+}
+
+nav ul {
+    display: flex;
+    padding-right: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 2rem;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgb(238, 143, 0);
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+
+/* Different Backgrounds*/
+
+.whiteBG {
+    background: white;
+}
+
+.grayBG {
+    background: #F9F8FD;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .jobPost {
+        min-width: 150px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h4 {
+        font-size: .8rem;
+    }
+    
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    nav ul li a {
+        font-size: .9rem;
+    }
+
+    img {
+        display: none;
+    }
+
+    .leftContent {
+        width: 80%;
+        padding-top: 5rem;
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .content {
+        height: fit-content
+    }
+}
